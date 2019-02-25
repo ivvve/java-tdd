@@ -3,13 +3,14 @@ package account;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
 public class AccountTest {
     private Account account;
 
     @Before
-    public void setup() {
+    public void init() {
         this.account = new Account(10_000);
     }
 
@@ -17,30 +18,53 @@ public class AccountTest {
     public void testAccount() {
     }
 
-
     @Test
-    public void testGetBalance() {
-        assertEquals(10_000, account.getBalance());
-
-        account = new Account(1_000);
-        assertEquals(1_000, account.getBalance());
-
-        account = new Account(0);
-        assertEquals(0, account.getBalance());
-
-        account = new Account(3_000);
-        assertEquals(3_000, account.getBalance());
+    public void test_잔액_확인() {
+        assertThat(this.account.getBalance(), is(10_000));
     }
 
     @Test
-    public void testDeposit() {
-        account.deposit(1_000);
-        assertEquals(11_000, account.getBalance());
+    public void test_입금() {
+        int money = 10_000;
+
+        this.account.deposit(1_000);
+        money += 1_000;
+        assertThat(this.account.getBalance(), is(money));
+
+        this.account.deposit(100);
+        money += 100;
+        assertThat(this.account.getBalance(), is(money));
+
+        this.account.deposit(100_000);
+        money += 100_000;
+        assertThat(this.account.getBalance(), is(money));
+
+        this.account.deposit(2_303);
+        money += 2_303;
+        assertThat(this.account.getBalance(), is(money));
     }
 
     @Test
-    public void testWithdraw() {
-        account.withdraw(1_000);
-        assertEquals(9_000, account.getBalance());
+    public void test_출금() {
+        int money = 10_000;
+
+        this.account.withdraw(1_000);
+        money -= 1_000;
+        assertThat(this.account.getBalance(), is(money));
+
+        this.account.withdraw(147);
+        money -= 147;
+        assertThat(this.account.getBalance(), is(money));
+
+        this.account.withdraw(325);
+        money -= 325;
+        assertThat(this.account.getBalance(), is(money));
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void test_마이너스_출금() {
+        int money = 10_000;
+
+        this.account.withdraw(100_000);
     }
 }

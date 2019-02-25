@@ -1,0 +1,31 @@
+package coupon;
+
+/**
+ * default value를 return 하는 dummy 객체
+ */
+public class DummyCoupon implements ICoupon {
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public boolean isValid() {
+        return false;
+    }
+
+    @Override
+    public int getDiscountPercent() {
+        return 0;
+    }
+
+    @Override
+    public boolean isAppliable(Item item) {
+        return false;
+    }
+
+    @Override
+    public void doExpire() {
+
+    }
+}

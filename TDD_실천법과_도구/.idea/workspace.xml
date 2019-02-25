@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f2ebfeb-c65f-4572-84e8-8c032c0d6353" name="Default Changelist" comment="" />
+    <list default="true" id="4f2ebfeb-c65f-4572-84e8-8c032c0d6353" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/ICoupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/PriceCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/coupon/CouponDummyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/coupon/CouponStubTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/coupon/DummyCoupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/coupon/StubCoupon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d1af7196cc87101e60f98a8db22ab945afc598c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d1af7196cc87101e60f98a8db22ab945afc598c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fac6930cbb247a668d2a258ab77b406852f0115" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b916ac52ae992e909c424282fe8bfd173d6aca51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/account/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/account/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/account/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/account/AccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/account/AccountTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/account/AccountTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/coupon/CouponStubTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="448">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,11 +42,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/account/Account.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/coupon/PriceCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="80">
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -46,6 +69,9 @@
     <findStrings>
       <find>fail();</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,7 +82,20 @@
         <option value="$PROJECT_DIR$/src/main/java/book/account/Account.java" />
         <option value="$PROJECT_DIR$/src/test/java/book/account/AccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/account/계좌.java" />
+        <option value="$PROJECT_DIR$/src/test/java/account/계좌Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/account/PatterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/account/Account.java" />
+        <option value="$PROJECT_DIR$/src/test/java/account/AccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/coupon/ICoupon.java" />
+        <option value="$PROJECT_DIR$/src/test/java/coupon/Item.java" />
+        <option value="$PROJECT_DIR$/src/test/java/coupon/DummyCoupon.java" />
+        <option value="$PROJECT_DIR$/src/test/java/coupon/CouponDummyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/coupon/StubCoupon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/coupon/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/coupon/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/coupon/PriceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/coupon/CouponStubTest.java" />
       </list>
     </option>
   </component>
@@ -68,18 +107,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3071" />
-    <option name="y" value="59" />
-    <option name="width" value="1228" />
-    <option name="height" value="935" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,6 +155,14 @@
               <item name="TDD_실천법과_도구" type="b2602c69:ProjectViewProjectNode" />
               <item name="TDD_실천법과_도구" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TDD_실천법과_도구" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TDD_실천법과_도구" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -134,18 +180,29 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TDD_실천법과_도구" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TDD_실천법과_도구" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coupon" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550477892493" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551099825885" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -156,12 +213,20 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="account" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="coupon" />
       <recent name="account" />
       <recent name="" />
       <recent name="book.account" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="account" />
       <recent name="book.account" />
     </key>
   </component>
@@ -177,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
+  <component name="RunManager" selected="JUnit.CouponStubTest.testGetOrderPrice_discountableItem">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -188,7 +253,7 @@
       <module name="tdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,38 +265,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.계좌_생성_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CouponDummyTest.testAddCoupon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="coupon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="account" />
-      <option name="MAIN_CLASS_NAME" value="account.AccountTest" />
-      <option name="METHOD_NAME" value="계좌_생성_테스트" />
+      <option name="PACKAGE_NAME" value="coupon" />
+      <option name="MAIN_CLASS_NAME" value="coupon.CouponDummyTest" />
+      <option name="METHOD_NAME" value="testAddCoupon" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.잔고_조회_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CouponStubTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="book.account.*" />
+          <option name="PATTERN" value="coupon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="book.account" />
-      <option name="MAIN_CLASS_NAME" value="book.account.AccountTest" />
-      <option name="METHOD_NAME" value="잔고_조회_테스트" />
+      <option name="PACKAGE_NAME" value="coupon" />
+      <option name="MAIN_CLASS_NAME" value="coupon.CouponStubTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CouponStubTest.testGetOrderPrice_discountableItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coupon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="coupon" />
+      <option name="MAIN_CLASS_NAME" value="coupon.CouponStubTest" />
+      <option name="METHOD_NAME" value="testGetOrderPrice_discountableItem" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="account" />
+      <option name="MAIN_CLASS_NAME" value="account.PatterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatterTest.특수문자_공백_미포함_정규식_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="account" />
+      <option name="MAIN_CLASS_NAME" value="account.PatterTest" />
+      <option name="METHOD_NAME" value="특수문자_공백_미포함_정규식_테스트" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,14 +363,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.AccountTest" />
-      <item itemvalue="JUnit.AccountTest.계좌_생성_테스트" />
-    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CouponStubTest.testGetOrderPrice_discountableItem" />
+        <item itemvalue="JUnit.CouponStubTest" />
+        <item itemvalue="JUnit.CouponDummyTest.testAddCoupon" />
         <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.계좌_생성_테스트" />
+        <item itemvalue="JUnit.PatterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,48 +386,56 @@
       <workItem from="1550472859984" duration="2772000" />
       <workItem from="1550477720888" duration="30000" />
       <workItem from="1550477828467" duration="74000" />
+      <workItem from="1550495145483" duration="3020000" />
+      <workItem from="1550662580859" duration="23000" />
+      <workItem from="1550662729366" duration="2334000" />
+      <workItem from="1550848987996" duration="699000" />
+      <workItem from="1550962046779" duration="40000" />
+      <workItem from="1551067745429" duration="1296000" />
+      <workItem from="1551096428767" duration="2092000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountTest - 2019.02.18 at 16h 55m 54s.xml">
+    <history-entry file="PatterTest_특수문자_공백_미포함_정규식_테스트 - 2019.02.23 at 00h 30m 21s.xml">
+      <configuration name="PatterTest.특수문자_공백_미포함_정규식_테스트" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PatterTest_특수문자_공백_미포함_정규식_테스트 - 2019.02.23 at 00h 30m 39s.xml">
+      <configuration name="PatterTest.특수문자_공백_미포함_정규식_테스트" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PatterTest - 2019.02.23 at 00h 31m 18s.xml">
+      <configuration name="PatterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountTest - 2019.02.25 at 13h 22m 12s.xml">
       <configuration name="AccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 16h 56m 01s.xml">
+    <history-entry file="AccountTest - 2019.02.25 at 13h 25m 49s.xml">
       <configuration name="AccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 16h 56m 13s.xml">
+    <history-entry file="AccountTest - 2019.02.25 at 13h 27m 17s.xml">
       <configuration name="AccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 16h 58m 02s.xml">
+    <history-entry file="AccountTest - 2019.02.25 at 13h 28m 45s.xml">
       <configuration name="AccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 16h 58m 45s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="CouponDummyTest_testAddCoupon - 2019.02.25 at 21h 37m 31s.xml">
+      <configuration name="CouponDummyTest.testAddCoupon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 16h 59m 11s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="CouponStubTest - 2019.02.25 at 21h 41m 47s.xml">
+      <configuration name="CouponStubTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 17h 02m 27s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 17h 03m 07s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 17h 03m 18s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountTest - 2019.02.18 at 17h 18m 20s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="CouponStubTest_testGetOrderPrice_discountableItem - 2019.02.25 at 21h 45m 27s.xml">
+      <configuration name="CouponStubTest.testGetOrderPrice_discountableItem" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2876000" />
+    <option name="totallyTimeSpent" value="12380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3071" y="59" width="1228" height="935" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35431033" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33443707" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -325,8 +443,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32950193" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33072627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,7 +452,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32964602" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="bottom" id="SonarLint" order="11" weight="0.32964602" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -361,20 +479,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/account/계좌Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/account/계좌.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/account/PatterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/account/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/account/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="455">
+          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/account/Account.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/coupon/ICoupon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/coupon/CouponDummyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/coupon/DummyCoupon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coupon/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/coupon/StubCoupon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coupon/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coupon/PriceCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/coupon/CouponStubTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
