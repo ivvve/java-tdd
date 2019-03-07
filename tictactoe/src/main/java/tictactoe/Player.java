@@ -2,30 +2,34 @@ package tictactoe;
 
 public class Player {
     private String name;
-    private Record record;
+    private int win;
+    private int lose;
 
     public Player(String name) {
         this.name = name;
-        this.record = new Record();
     }
 
-    public Record getRecord() {
-        return this.record;
+    public int getWin() {
+        return win;
+    }
+
+    public int getLose() {
+        return lose;
     }
 
     public void win() {
-        this.record.addWin();
+        this.win++;
     }
 
     public void lose() {
-        this.record.addLose();
+        this.lose++;
     }
 
     public String csvFormat() {
         return new StringBuilder()
                 .append(this.name).append(",")
-                .append(this.record.getWin()).append(",")
-                .append(this.record.getLose())
+                .append(this.win).append(",")
+                .append(this.lose)
                 .toString();
     }
 }

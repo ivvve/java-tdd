@@ -20,36 +20,35 @@ public class PlayerTest {
     }
 
     @Test
-    public void player_getRecord_test() {
-        Record player1Record = player1.getRecord();
-        assertThat(player1Record.getWin(), is(0));
-        assertThat(player1Record.getLose(), is(0));
+    public void player_getWin_과_getLose_test() {
+        assertThat(player1.getWin(), is(0));
+        assertThat(player1.getLose(), is(0));
+        assertThat(player2.getWin(), is(0));
+        assertThat(player2.getLose(), is(0));
     }
 
     @Test
     public void player_win_과_lose_test() {
         player1.win();
         player2.lose();
-        Record player1Record = player1.getRecord();
-        Record player2Record = player2.getRecord();
-        assertThat(player1Record.getWin(), is(1));
-        assertThat(player1Record.getLose(), is(0));
-        assertThat(player2Record.getWin(), is(0));
-        assertThat(player2Record.getLose(), is(1));
+        assertThat(player1.getWin(), is(1));
+        assertThat(player1.getLose(), is(0));
+        assertThat(player2.getWin(), is(0));
+        assertThat(player2.getLose(), is(1));
 
         player1.lose();
         player2.win();
-        assertThat(player1Record.getWin(), is(1));
-        assertThat(player1Record.getLose(), is(1));
-        assertThat(player2Record.getWin(), is(1));
-        assertThat(player2Record.getLose(), is(1));
+        assertThat(player1.getWin(), is(1));
+        assertThat(player1.getLose(), is(1));
+        assertThat(player2.getWin(), is(1));
+        assertThat(player2.getLose(), is(1));
 
         player1.lose();
         player2.win();
-        assertThat(player1Record.getWin(), is(1));
-        assertThat(player1Record.getLose(), is(2));
-        assertThat(player2Record.getWin(), is(2));
-        assertThat(player2Record.getLose(), is(1));
+        assertThat(player1.getWin(), is(1));
+        assertThat(player1.getLose(), is(2));
+        assertThat(player2.getWin(), is(2));
+        assertThat(player2.getLose(), is(1));
     }
 
     @Test
