@@ -3,17 +3,19 @@ package tictactoe.csv;
 import org.junit.Test;
 import tictactoe.Player;
 
+import java.io.IOException;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class CsvManagerTest {
     @Test
-    public void csvManager_savePlayer_readPlayer_test() {
+    public void csvManager_savePlayer_readPlayer_test() throws IOException {
         Player player = new Player("Chris");
-        player.win();
-        player.win();
-        player.lose();
-        player.lose();
+//        player.win();
+//        player.win();
+//        player.lose();
+//        player.lose();
 
         CsvManager csvManager = new CsvManager();
 
