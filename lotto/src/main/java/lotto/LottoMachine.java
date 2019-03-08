@@ -7,18 +7,23 @@ public class LottoMachine {
     private final int maxLottoNumber = 45;
     private final int numberOfWinNumbers = 6;
 
-    public List<Integer> winNumbers() {
-        List<Integer> lottoNumbers = this.getSuffledAllLottoNumbers();
+
+    public LottoNumber lottoNumber() {
+        List<Integer> shuffledAllLottoNumbers = this.getShuffledAllLottoNumbers();
         List<Integer> winNumbers = new ArrayList<>(numberOfWinNumbers);
+        int bonusNumber;
 
         for (int i = 0; i < numberOfWinNumbers; i++) {
-            winNumbers.add(lottoNumbers.get(i));
+            int winNumber = shuffledAllLottoNumbers.get(i);
+            winNumbers.add(winNumber);
         }
 
-        return winNumbers;
+        bonusNumber = shuffledAllLottoNumbers.get(numberOfWinNumbers);
+
+        return new LottoNumber(winNumbers, bonusNumber);
     }
 
-    private List<Integer> getSuffledAllLottoNumbers() {
+    private List<Integer> getShuffledAllLottoNumbers() {
         List<Integer> allLottoNumbers = this.getAllLottoNumbers();
         return shuffleLottoNumbers(allLottoNumbers);
     }
@@ -40,5 +45,4 @@ public class LottoMachine {
 
         return lottoNumbers;
     }
-
 }
