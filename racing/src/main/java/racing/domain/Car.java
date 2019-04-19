@@ -12,7 +12,7 @@ public class Car {
         this.numberGenerator = numberGenerator;
     }
 
-    public void move() {
+    void move() {
         move(numberGenerator.generate());
     }
 
@@ -22,7 +22,7 @@ public class Car {
         }
     }
 
-    public int getDistance() {
+    int getDistance() {
         return this.distance;
     }
 }
