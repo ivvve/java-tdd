@@ -1,19 +1,21 @@
 package racing.domain;
 
 import org.junit.Test;
+import racing.domain.generator.CarMoveThresholdGenerator;
+import racing.domain.generator.NumberGenerator;
+import racing.domain.generator.ZeroGenerator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CarTest {
-    private static final int MOVE_THRESHOLD = 4;
-
     @Test
     public void Car_이동_문턱값_이상() {
         // given
-        Car car = new Car();
+        NumberGenerator numberGenerator = new CarMoveThresholdGenerator();
+        Car car = new Car(numberGenerator);
 
         // when
-        car.move(MOVE_THRESHOLD);
+        car.move();
 
         // then
         assertThat(car.getDistance()).isEqualTo(1);
@@ -22,10 +24,11 @@ public class CarTest {
     @Test
     public void Car_이동_문턱값_미만() {
         // given
-        Car car = new Car();
+        NumberGenerator numberGenerator = new ZeroGenerator();
+        Car car = new Car(numberGenerator);
 
         // when
-        car.move(MOVE_THRESHOLD - 1);
+        car.move();
 
         // then
         assertThat(car.getDistance()).isEqualTo(0);
