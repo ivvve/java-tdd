@@ -24,12 +24,12 @@ public class RacingGameTest {
         RacingGame racingGame = new RacingGame(cars, totalRound);
 
         // when
-        while (!racingGame.hasNextRound()) {
+        while (racingGame.hasNextRound()) {
             racingGame.nextRound();
         }
 
         // then
-        assertThat(racingGame.getRound()).isEqualTo(totalRound);
+        assertThat(racingGame.getCurrentRound()).isEqualTo(totalRound);
     }
 
     @Test
@@ -45,7 +45,7 @@ public class RacingGameTest {
         RacingGame racingGame = new RacingGame(cars, totalRound);
 
         // when
-        while (!racingGame.hasNextRound()) {
+        while (racingGame.hasNextRound()) {
             racingGame.nextRound();
         }
 
