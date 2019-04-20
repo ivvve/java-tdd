@@ -3,7 +3,7 @@ package racing.vo;
 import java.util.Objects;
 
 public class Round {
-    private static final int MIN_ROUND = 1;
+    private static final int MIN_ROUND = 0;
     private final int round;
 
     public Round(int round) {
@@ -22,6 +22,10 @@ public class Round {
 
     public int getValue() {
         return this.round;
+    }
+
+    public boolean isLowerThan(Round target) {
+        return this.round < target.round;
     }
 
     @Override
