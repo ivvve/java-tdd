@@ -6,6 +6,7 @@ import racing.domain.generator.NumberGenerator;
 import racing.domain.generator.ZeroGenerator;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 
 public class CarTest {
     @Test
@@ -32,5 +33,19 @@ public class CarTest {
 
         // then
         assertThat(car.getDistance()).isEqualTo(0);
+    }
+
+    @Test
+    public void toString_이동한거리를_표시() {
+        // given
+        NumberGenerator numberGenerator = new CarMoveThresholdGenerator();
+        Car car = new Car(numberGenerator);
+
+        // when
+        car.move();
+        car.move();
+
+        // then
+        assertThat(car.toString()).isEqualTo("--");
     }
 }

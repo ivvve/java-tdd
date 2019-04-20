@@ -2,6 +2,9 @@ package racing.domain;
 
 import racing.domain.generator.NumberGenerator;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class Car {
     private static final int MOVE_THRESHOLD = 4;
 
@@ -24,5 +27,12 @@ public class Car {
 
     int getDistance() {
         return this.distance;
+    }
+
+    @Override
+    public String toString() {
+        return IntStream.range(0, this.distance)
+                .mapToObj(i -> "-")
+                .collect(Collectors.joining());
     }
 }
