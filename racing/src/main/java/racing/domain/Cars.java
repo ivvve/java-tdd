@@ -33,4 +33,11 @@ public class Cars {
                 .max()
                 .getAsInt();
     }
+
+    @Override
+    public String toString() {
+        return this.cars.stream()
+                .map(Car::toString)
+                .collect(Collectors.joining(System.lineSeparator()));
+    }
 }
