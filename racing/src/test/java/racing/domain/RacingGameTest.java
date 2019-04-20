@@ -50,7 +50,7 @@ public class RacingGameTest {
         }
 
         // then
-        List<Car> winners = racingGame.getWinnersOfRound();
+        List<Car> winners = racingGame.getWinners();
         assertThat(winners).containsExactly(winner1, winner2);
     }
 

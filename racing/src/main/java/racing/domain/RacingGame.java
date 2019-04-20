@@ -15,20 +15,25 @@ public class RacingGame {
         this.totalRound = totalRound;
     }
 
-    public List<Car> getWinnersOfRound() {
+    public List<Car> getWinners() {
         return this.cars.getWinners();
     }
 
-    boolean hasNextRound() {
+    public boolean hasNextRound() {
         return (this.currentRound.isLowerThan(this.totalRound));
     }
 
-    void nextRound() {
+    public void nextRound() {
         this.cars.moveAllCar();
         this.currentRound = this.currentRound.nextRound();
     }
 
     Round getCurrentRound() {
         return this.currentRound;
+    }
+
+    @Override
+    public String toString() {
+        return this.cars.toString();
     }
 }
