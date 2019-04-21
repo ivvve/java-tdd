@@ -23,13 +23,13 @@ public class Cars {
         int maxDistance = getMaxDistance();
 
         return this.cars.stream()
-                .filter(car -> (maxDistance == car.getDistance()))
+                .filter(car -> (maxDistance == car.getDistanceValue()))
                 .collect(Collectors.toList());
     }
 
     int getMaxDistance() {
         return this.cars.stream()
-                .mapToInt(Car::getDistance)
+                .mapToInt(Car::getDistanceValue)
                 .max()
                 .getAsInt();
     }

@@ -4,6 +4,7 @@ import org.junit.Test;
 import racing.domain.generator.CarMoveThresholdGenerator;
 import racing.domain.generator.NumberGenerator;
 import racing.domain.generator.ZeroGenerator;
+import racing.vo.Distance;
 
 import java.util.Arrays;
 import java.util.List;
@@ -29,7 +30,7 @@ public class CarsTest {
         List<Car> allCars = cars.getCars();
 
         allCars.forEach(car ->
-                assertThat(car.getDistance()).isEqualTo(1));
+                assertThat(car.getDistance()).isEqualTo(new Distance(1)));
     }
 
     @Test
@@ -66,10 +67,10 @@ public class CarsTest {
     }
 
     private Car moveCar() {
-        return new Car(carMoveThresholdGenerator);
+        return new Car("son", carMoveThresholdGenerator);
     }
 
     private Car dontMoveCar() {
-        return new Car(zeroGenerator);
+        return new Car("son", zeroGenerator);
     }
 }
