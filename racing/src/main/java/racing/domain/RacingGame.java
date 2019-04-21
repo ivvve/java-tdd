@@ -2,6 +2,7 @@ package racing.domain;
 
 import racing.vo.Round;
 
+import java.util.Collections;
 import java.util.List;
 
 public class RacingGame {
@@ -16,7 +17,7 @@ public class RacingGame {
     }
 
     public List<Car> getWinners() {
-        return this.cars.getWinners();
+        return Collections.unmodifiableList(this.cars.getWinners());
     }
 
     public boolean hasNextRound() {

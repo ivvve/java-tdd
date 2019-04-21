@@ -22,6 +22,10 @@ public class Car {
         return this.name + " : " + this.distance;
     }
 
+    public String getName() {
+        return name;
+    }
+
     void move() {
         move(numberGenerator.generate());
     }

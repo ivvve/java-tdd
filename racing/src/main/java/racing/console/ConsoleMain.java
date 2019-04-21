@@ -24,11 +24,9 @@ public class ConsoleMain {
         ConsoleOutputView.printEmpryLine();
         ConsoleOutputView.printMessage("실행 결과");
 
-        while (racingGame.hasNextRound()) {
-            racingGame.nextRound();
-            ConsoleOutputView.printRacingGmae(racingGame);
-            ConsoleOutputView.printEmpryLine();
-        }
+        playRacingGame(racingGame);
+
+        ConsoleOutputView.printWinners(racingGame.getWinners());
     }
 
     private static RacingGame generateRacingGame(String carNames, int numberOfRound) {
@@ -40,4 +38,11 @@ public class ConsoleMain {
         return racingGameGenerator.generate(cars, new Round(numberOfRound));
     }
 
+    private static void playRacingGame(RacingGame racingGame) {
+        while (racingGame.hasNextRound()) {
+            racingGame.nextRound();
+            ConsoleOutputView.printRacingGmae(racingGame);
+            ConsoleOutputView.printEmpryLine();
+        }
+    }
 }
