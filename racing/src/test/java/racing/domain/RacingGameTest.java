@@ -55,10 +55,10 @@ public class RacingGameTest {
     }
 
     private Car moveCar() {
-        return new Car(carMoveThresholdGenerator);
+        return new Car("son", carMoveThresholdGenerator);
     }
 
     private Car dontMoveCar() {
-        return new Car(zeroGenerator);
+        return new Car("son", zeroGenerator);
     }
 }
