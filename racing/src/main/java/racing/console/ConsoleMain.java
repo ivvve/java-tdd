@@ -3,21 +3,23 @@ package racing.console;
 import racing.domain.RacingGame;
 import racing.domain.generator.RacingGameGenerator;
 import racing.domain.generator.RandomPositiveNumberUnderTenGenerator;
+import racing.parser.CarNameParser;
 import racing.vo.Round;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleMain {
     public static void main(String[] args) {
-        int numberOfCar;
+        String carNames;
         int numberOfRound;
 
         try (Scanner scanner = new Scanner(System.in)) {
-            numberOfCar = ConsoleInputView.inputNumberOfCar(scanner);
+            carNames = ConsoleInputView.inputCarNames(scanner);
             numberOfRound = ConsoleInputView.inputNumberOfRound(scanner);
         }
 
-        RacingGame racingGame = generateRacingGame(numberOfCar, numberOfRound);
+        RacingGame racingGame = generateRacingGame(carNames, numberOfRound);
 
         ConsoleOutputView.printEmpryLine();
         ConsoleOutputView.printMessage("실행 결과");
@@ -29,11 +31,13 @@ public class ConsoleMain {
         }
     }
 
-    private static RacingGame generateRacingGame(int numberOfCar, int numberOfRound) {
+    private static RacingGame generateRacingGame(String carNames, int numberOfRound) {
+        List<String> cars = new CarNameParser(",").parse(carNames);
+
         RacingGameGenerator racingGameGenerator =
                 new RacingGameGenerator(new RandomPositiveNumberUnderTenGenerator());
 
-        return racingGameGenerator.generate(numberOfCar, new Round(numberOfRound));
+        return racingGameGenerator.generate(cars, new Round(numberOfRound));
     }
 
 }

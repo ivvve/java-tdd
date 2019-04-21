@@ -7,7 +7,6 @@ import racing.vo.Round;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class RacingGameGenerator {
     private final NumberGenerator numberGenerator;
@@ -16,15 +15,15 @@ public class RacingGameGenerator {
         this.numberGenerator = numberGenerator;
     }
 
-    public RacingGame generate(int numberOfCar, Round totalRound) {
-        return new RacingGame(makeCars(numberOfCar), totalRound);
+    public RacingGame generate(List<String> carNames, Round totalRound) {
+        return new RacingGame(makeCars(carNames), totalRound);
     }
 
-    private Cars makeCars(int numberOfCar) {
-        List<Car> allCars = IntStream.range(0, numberOfCar)
-                .mapToObj(i -> new Car(this.numberGenerator))
+    private Cars makeCars(List<String> carNames) {
+        List<Car> cars = carNames.stream()
+                .map(carName -> new Car(carName, this.numberGenerator))
                 .collect(Collectors.toList());
 
-        return new Cars(allCars);
+        return new Cars(cars);
     }
 }
