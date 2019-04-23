@@ -8,10 +8,10 @@ import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException
 public class MoneyTest {
 
     @Test
-    public void 돈은_1원_이상() {
+    public void 돈은_0원_이상() {
         // when
         // then
-        assertThatIllegalArgumentException().isThrownBy(() -> new Money(0));
+        assertThatIllegalArgumentException().isThrownBy(() -> new Money(-1L));
     }
 
     @Test
