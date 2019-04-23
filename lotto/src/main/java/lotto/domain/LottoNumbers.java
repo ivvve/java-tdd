@@ -1,6 +1,7 @@
 package lotto.domain;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LottoNumbers {
     private static final int LOTTO_NUMBERS_SIZE = 6;
@@ -11,6 +12,13 @@ public class LottoNumbers {
         validateLottoNumbers(lottoNumbers);
 
         this.lottoNumbers = lottoNumbers;
+    }
+
+    @Override
+    public String toString() {
+        return this.lottoNumbers.stream()
+                .map(LottoNumber::toString)
+                .collect(Collectors.joining(", ", "[", "]"));
     }
 
     int getNumberOfDuplicatedLottoNumbers(LottoNumbers target) {

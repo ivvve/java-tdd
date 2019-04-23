@@ -38,10 +38,14 @@ public class LottoNumber implements Comparable {
         return (this.number - ((LottoNumber) o).number);
     }
 
+    @Override
+    public String toString() {
+        return String.valueOf(this.number);
+    }
+
     private static void validateNumber(int number) {
         if (number < MIN_LOTTO_NUMBER || MAX_LOTTO_NUMBER < number) {
             throw new IllegalArgumentException("Lotto number must be between " + MIN_LOTTO_NUMBER + " and " + MAX_LOTTO_NUMBER);
         }
     }
-
 }
