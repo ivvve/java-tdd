@@ -16,7 +16,9 @@ public class LottoMachine {
         this.lottoGenerator = lottoGenerator;
     }
 
-    public LottoBundle getLottoBundle(Money money) {
+    public LottoBundle buyLotto(Money money) {
+        validateMoney(money);
+
         long numberOfLottos = getNumberOfLottoFromMoney(money);
 
         List<Lotto> lottos = LongStream.range(0, numberOfLottos)
@@ -28,5 +30,11 @@ public class LottoMachine {
 
     long getNumberOfLottoFromMoney(Money money) {
         return money.getQuantityOf(LOTTO_PRICE);
+    }
+
+    private void validateMoney(Money money) {
+        if (money.isLowerThan(LOTTO_PRICE)) {
+            throw new IllegalArgumentException("You can't buy any lotto with this money");
+        }
     }
 }

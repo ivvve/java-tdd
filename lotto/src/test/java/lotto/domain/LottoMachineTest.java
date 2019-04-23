@@ -6,6 +6,7 @@ import lotto.vo.Money;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 
 public class LottoMachineTest {
     @Test
@@ -35,9 +36,24 @@ public class LottoMachineTest {
         Money money = new Money(amount);
 
         // when
-        LottoBundle lottoBundle = lottoMachine.getLottoBundle(money);
+        LottoBundle lottoBundle = lottoMachine.buyLotto(money);
 
         // then
         assertThat(lottoBundle.getLottos()).hasSize(amount / 1_000);
     }
+
+    @Test
+    public void 구매_불가한_금액을_넣을때_IllegalArgumentException() {
+        // given
+        LottoGenerator lottoGenerator = new OrderedLottoGenerator();
+        LottoMachine lottoMachine = new LottoMachine(lottoGenerator);
+
+        int amount = 500;
+        Money money = new Money(amount);
+
+        // when
+        // then
+        assertThatIllegalArgumentException().isThrownBy(() -> lottoMachine.buyLotto(money));
+    }
+
 }
