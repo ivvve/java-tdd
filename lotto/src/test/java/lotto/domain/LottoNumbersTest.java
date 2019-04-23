@@ -5,10 +5,24 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 
 public class LottoNumbersTest {
+    @Test
+    public void LottoNumber가_6개_있어야함() {
+        // given
+        List<LottoNumber> lottoNumbers = IntStream.rangeClosed(1, 5)
+                .mapToObj(LottoNumber::of)
+                .collect(Collectors.toList());
+
+        // when
+        // then
+        assertThatIllegalArgumentException().isThrownBy(() -> new LottoNumbers(lottoNumbers));
+    }
+
     @Test
     public void 해당_로또숫자의_포함여부_확인() {
         // given
