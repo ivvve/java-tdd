@@ -11,12 +11,12 @@ public class Money {
         this.money = money;
     }
 
-    public long getValue() {
-        return money;
-    }
-
     public long getQuantityOf(Money price) {
         return (this.money / price.money);
+    }
+
+    public boolean isLowerThan(Money target) {
+        return this.money < target.money;
     }
 
     private void validateMoney(long money) {

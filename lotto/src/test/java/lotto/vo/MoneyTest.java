@@ -17,13 +17,15 @@ public class MoneyTest {
     @Test
     public void 물건_구매_가능_갯수_구하기() {
         // given
-        Money money = new Money(10_340L);
-        Money price = new Money(1_000L);
+        long amount = 10_340L;
+        long productPrice = 1_000L;
+        Money money = new Money(amount);
+        Money price = new Money(productPrice);
 
         // when
         long quantity = money.getQuantityOf(price);
 
         // then
-        assertThat(quantity).isEqualTo(money.getValue() / price.getValue());
+        assertThat(quantity).isEqualTo(amount / productPrice);
     }
 }
