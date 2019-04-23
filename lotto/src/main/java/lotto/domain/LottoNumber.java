@@ -1,10 +1,10 @@
 package lotto.domain;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class LottoNumber {
+public class LottoNumber implements Comparable {
     private static final Map<Integer, LottoNumber> LOTTO_NUMBERS;
     private static final int MIN_LOTTO_NUMBER = 1;
     private static final int MAX_LOTTO_NUMBER = 45;
@@ -28,9 +28,20 @@ public class LottoNumber {
         return LOTTO_NUMBERS.get(number);
     }
 
+    public static List<LottoNumber> getAllLottoNumbers() {
+        return LOTTO_NUMBERS.values().stream()
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return (this.number - ((LottoNumber) o).number);
+    }
+
     private static void validateNumber(int number) {
         if (number < MIN_LOTTO_NUMBER || MAX_LOTTO_NUMBER < number) {
             throw new IllegalArgumentException("Lotto number must be between " + MIN_LOTTO_NUMBER + " and " + MAX_LOTTO_NUMBER);
         }
     }
+
 }
