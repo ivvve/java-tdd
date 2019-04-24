@@ -22,7 +22,8 @@ public class ConsoleMain {
             LottoResults lottoResults = lottoBundle.getLottoResults(winningLotto);
             ConsoleOutputView.printEmptyLine();
 
-            ConsoleOutputView.printResults(lottoResults, money);
+            ConsoleOutputView.printResults(lottoResults);
+            ConsoleOutputView.printTotalProfitRate(lottoResults, money);
         }
     }
 

@@ -19,17 +19,17 @@ public class LottoBundle {
         return new LottoResults(getLottoRanks(winningLotto));
     }
 
-    List<LottoRank> getLottoRanks(Lotto winningLotto) {
-        return this.lottos.stream()
-                .map(winningLotto::getRank)
-                .collect(Collectors.toList());
-    }
-
     @Override
     public String toString() {
         return this.lottos.stream()
                 .map(Lotto::toString)
                 .collect(Collectors.joining(System.lineSeparator()));
+    }
+
+    List<LottoRank> getLottoRanks(Lotto winningLotto) {
+        return this.lottos.stream()
+                .map(winningLotto::getRank)
+                .collect(Collectors.toList());
     }
 
     List<Lotto> getLottos() {

@@ -29,7 +29,7 @@ public class LottoResults {
         return getTotalProfit().getRateCompareTo(totalMoney);
     }
 
-    Money getTotalProfit() {
+    public Money getTotalProfit() {
         List<Money> totalProfit = this.lottoRanks.keySet().stream()
                 .map(lottoRank -> {
                     long winningCountOf = getWinningCountOf(lottoRank);
