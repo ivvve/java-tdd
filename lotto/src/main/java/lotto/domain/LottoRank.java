@@ -19,6 +19,18 @@ public enum LottoRank {
         this.duplicatedNumber = duplicatedNumber;
     }
 
+    public Money getWinningMoney() {
+        return winningMoney;
+    }
+
+    public int getDuplicatedNumber() {
+        return duplicatedNumber;
+    }
+
+    public boolean notFail() {
+        return this != FAIL;
+    }
+
     static LottoRank of(int duplicatedNumber) {
         return Arrays.stream(LottoRank.values())
                 .filter(lottoRank -> (lottoRank.duplicatedNumber == duplicatedNumber))
@@ -29,9 +41,4 @@ public enum LottoRank {
     Money getProfit(long count) {
         return this.winningMoney.multiply(count);
     }
-
-    Money getWinningMoney() {
-        return winningMoney;
-    }
-
 }
