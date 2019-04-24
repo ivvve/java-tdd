@@ -25,4 +25,13 @@ public enum LottoRank {
                 .findFirst()
                 .orElse(LottoRank.FAIL);
     }
+
+    Money getProfit(long count) {
+        return this.winningMoney.multiply(count);
+    }
+
+    Money getWinningMoney() {
+        return winningMoney;
+    }
+
 }
